@@ -26,7 +26,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'weight' => 'required|numeric',
-            'price' => 'required|numeric',
+            'price' => 'required|numeric|max:999999',
         ]);
 
         Product::create($request->all()); // டேட்டாபேஸில் புது பொருளைச் சேமிக்கும்
@@ -52,7 +52,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'weight' => 'required|numeric',
-            'price' => 'required|numeric',
+            'price' => 'required|numeric|max:999999',
         ]);
 
         $product->update($request->all()); // டேட்டாபேஸில் பழைய தரவை மாற்றி புதுப்பிக்கும்
