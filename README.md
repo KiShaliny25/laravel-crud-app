@@ -55,3 +55,13 @@ A simple Product Management CRUD Application built using Laravel and MySQL.
     ```bash
     php artisan serve
     ```
+
+## Database Setup
+1. Open XAMPP Control Panel and start **Apache** and **MySQL**.
+2. Open http://localhost/phpmyadmin in your browser.
+3. Create a new database named `product_crud`.
+
+## Folder Structure / Technologies Used
+- **Framework:** Laravel 10 / 11
+- **Database:** MySQL
+- **Frontend:** Blade Templates, Bootstrap 
